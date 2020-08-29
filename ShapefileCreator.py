@@ -51,13 +51,14 @@ class GenrateShapefile:
                         shpFile.field("Type", 'C')
                         shpFile.record(GeomType)
 
-                    for fieldName in props.keys():
-                        if addField:
+                    if addField:
+                        for fieldName in props.keys():
                             shpFile.field(fieldName)
-                        rowData.append(props[fieldName])      
 
+                        addField = False
 
-                    addField = False
+                    shpFile.record(**props)
+                    
                     #     ''' POINT = 1, POLYLINE = 3, POLYGON = 5 '''
                         
                     # Check for Geometry type and call API accordinly.
