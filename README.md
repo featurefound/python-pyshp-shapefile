@@ -1,7 +1,7 @@
 # python-pyshp-shapefile
 For More Details refer to the post https://featurefound.com/geo-json-to-shapefile-using-python-and-pyshp/
 
-Video tutorial : 
+Video tutorial : https://youtu.be/Y9O8EVChKIo
 
 Command : python ShapefileCreator.py <FileLocation> <FileName> <GeoJsonFile> <GeomType>
 
